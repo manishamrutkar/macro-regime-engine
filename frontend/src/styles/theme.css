@@ -1,0 +1,81 @@
+/* Regime color tokens */
+.regime-0 { color: var(--amber-light); }
+.regime-1 { color: var(--blue-light); }
+.regime-2 { color: var(--green-light); }
+.regime-3 { color: var(--red-light); }
+
+.regime-bg-0 { background: rgba(245,158,11,0.15);  border: 1px solid rgba(245,158,11,0.3); }
+.regime-bg-1 { background: rgba(59,130,246,0.15);  border: 1px solid rgba(59,130,246,0.3); }
+.regime-bg-2 { background: rgba(16,185,129,0.15);  border: 1px solid rgba(16,185,129,0.3); }
+.regime-bg-3 { background: rgba(239,68,68,0.15);   border: 1px solid rgba(239,68,68,0.3); }
+
+/* Button styles */
+.btn {
+  padding: 9px 16px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.65);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: var(--font);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.btn:hover {
+  background: rgba(255,255,255,0.09);
+  border-color: rgba(255,255,255,0.18);
+  color: var(--text);
+}
+.btn-primary {
+  background: linear-gradient(135deg, rgba(99,102,241,0.35), rgba(59,130,246,0.35));
+  border-color: rgba(99,102,241,0.5);
+  color: #c7d2fe;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, rgba(99,102,241,0.5), rgba(59,130,246,0.5));
+  color: #e0e7ff;
+}
+
+/* Badge styles */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 9px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.badge-new {
+  font-size: 8px;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+  color: #fff;
+  font-weight: 700;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.badge-green  { background: rgba(16,185,129,0.15); border: 1px solid rgba(16,185,129,0.3); color: #34d399; }
+.badge-amber  { background: rgba(245,158,11,0.15); border: 1px solid rgba(245,158,11,0.3); color: #fbbf24; }
+.badge-blue   { background: rgba(59,130,246,0.15); border: 1px solid rgba(59,130,246,0.3); color: #60a5fa; }
+.badge-red    { background: rgba(239,68,68,0.15);  border: 1px solid rgba(239,68,68,0.3);  color: #f87171; }
+.badge-purple { background: rgba(99,102,241,0.15); border: 1px solid rgba(99,102,241,0.3); color: #a5b4fc; }
+
+/* Loading skeleton */
+.skeleton {
+  background: linear-gradient(90deg,
+    rgba(255,255,255,0.04) 25%,
+    rgba(255,255,255,0.08) 50%,
+    rgba(255,255,255,0.04) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 6px;
+}
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

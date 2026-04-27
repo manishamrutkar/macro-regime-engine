@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: macro-regime-backend
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: FRED_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+
+  - type: web
+    name: macro-regime-frontend
+    env: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+
+databases:
+  - name: macro-regime-db
+    databaseName: macro_regime_db
+    user: postgres

@@ -1,0 +1,20 @@
+# Slim requirements for cloud deployment
+# Heavy libs (torch, tensorflow) excluded to keep image small
+
+pandas==2.2.0
+numpy==1.26.4
+scikit-learn==1.4.0
+scipy==1.12.0
+requests==2.31.0
+python-dotenv==1.0.1
+yfinance==0.2.36
+fredapi==0.5.1
+psycopg2-binary==2.9.9
+
+# RAG (lightweight)
+sentence-transformers==2.5.1
+faiss-cpu==1.7.4
+PyPDF2==3.0.1
+
+# Stats
+statsmodels==0.14.1

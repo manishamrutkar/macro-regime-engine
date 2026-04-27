@@ -1,0 +1,48 @@
+# Core data science
+pandas==2.2.0
+numpy==1.26.4
+scikit-learn==1.4.0
+scipy==1.12.0
+statsmodels==0.14.1
+
+# Visualization
+matplotlib==3.8.2
+seaborn==0.13.2
+plotly==5.19.0
+
+# Finance data
+yfinance==0.2.36
+fredapi==0.5.1
+requests==2.31.0
+
+# RAG & AI (install these for full AI features)
+sentence-transformers==2.5.1
+faiss-cpu==1.7.4
+PyPDF2==3.0.1
+
+# Database
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.27
+
+# API server (optional - if running Python as API)
+fastapi==0.109.2
+uvicorn==0.27.1
+
+# Utilities
+python-dotenv==1.0.1
+jupyter==1.0.0
+
+# Testing
+pytest==8.0.1
+
+# Portfolio optimization
+pyportfolioopt==1.5.5
+cvxpy==1.4.2
+
+# ML
+transformers==4.38.1
+
+# Note: torch/tensorflow are optional heavy deps
+# Install separately if needed:
+# pip install torch==2.2.0
+# pip install tensorflow==2.15.0
